@@ -1,2 +1,1 @@
-
-delete
+Delete extra README file

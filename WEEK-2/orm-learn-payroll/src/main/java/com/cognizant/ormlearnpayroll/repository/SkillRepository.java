@@ -1,4 +1,11 @@
 package com.cognizant.ormlearnpayroll.repository;
 
-public class SkillRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.cognizant.ormlearnpayroll.model.Skill;
+
+@Repository
+public interface SkillRepository extends JpaRepository<Skill, Integer> {
+
 }

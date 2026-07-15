@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.office-container {
+  margin-left: 200px;
+  margin-top: 40px;
+}
+
+.office-container h1 {
+  font-size: 28px;
+}
+
+.office-container h3 {
+  font-size: 16px;
+}
+
+.office-container img {
+  object-fit: cover;
+}

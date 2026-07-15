@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-left: 200px;
+  margin-top: 80px;
+}
+
+.container h1 {
+  font-size: 26px;
+}
+
+.container button {
+  font-size: 12px;
+}

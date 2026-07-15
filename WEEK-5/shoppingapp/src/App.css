@@ -1,0 +1,33 @@
+.App {
+  font-family: "Times New Roman", serif;
+}
+
+.shopping-container {
+  margin-left: 80px;
+  margin-top: 8px;
+}
+
+.shopping-container h1 {
+  color: green;
+  font-size: 22px;
+  margin: 0 0 12px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 128px;
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+
+th,
+td {
+  border: 1px solid #888;
+  height: 17px;
+  padding: 0 4px;
+}
+
+th {
+  font-weight: bold;
+}

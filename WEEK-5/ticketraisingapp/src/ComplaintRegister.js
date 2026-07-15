@@ -7,13 +7,13 @@ class ComplaintRegister extends Component {
         this.state = {
             ename: "",
             complaint: "",
-            numberHolder: Math.floor(100000 + Math.random() * 900000)
+            numberHolder: Math.floor(100000 + Math.random() * 900000),
         };
     }
 
     handleChange = (event) => {
         this.setState({
-            [event.target.name]: event.target.value
+            [event.target.name]: event.target.value,
         });
     };
 
@@ -23,7 +23,7 @@ class ComplaintRegister extends Component {
         const msg =
             "Thanks " +
             this.state.ename +
-            "\nYour Complaint was Submitted.\nReference ID is: " +
+            "\nYour Complaint was Submitted Successfully.\nReference ID is: " +
             this.state.numberHolder;
 
         alert(msg);
@@ -31,19 +31,17 @@ class ComplaintRegister extends Component {
         this.setState({
             ename: "",
             complaint: "",
-            numberHolder: Math.floor(100000 + Math.random() * 900000)
+            numberHolder: Math.floor(100000 + Math.random() * 900000),
         });
     };
 
     render() {
         return (
             <div className="container">
-                <h2>Ticket Raising App</h2>
+                <h2>Register your complaints here!!!</h2>
 
                 <form onSubmit={this.handleSubmit}>
-                    <label>Employee Name</label>
-                    <br />
-
+                    <label><b>Employee Name:</b></label>
                     <input
                         type="text"
                         name="ename"
@@ -52,24 +50,18 @@ class ComplaintRegister extends Component {
                         required
                     />
 
-                    <br />
-                    <br />
-
-                    <label>Complaint</label>
-                    <br />
-
+                    <label><b>Complaint:</b></label>
                     <textarea
                         name="complaint"
                         rows="5"
                         value={this.state.complaint}
                         onChange={this.handleChange}
                         required
-                    />
+                    ></textarea>
 
-                    <br />
-                    <br />
-
-                    <button type="submit">Submit</button>
+                    <div className="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         );

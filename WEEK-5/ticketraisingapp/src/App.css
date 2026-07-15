@@ -1,32 +1,38 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
 }
 
 .container {
-  width: 400px;
-  margin: 60px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px gray;
+  width: 450px;
+  margin: 50px auto;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 8px;
-  margin-top: 5px;
+  box-sizing: border-box;
 }
 
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* No button styling */
 button {
-  background: green;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: darkgreen;
+  padding: 5px 15px;
 }

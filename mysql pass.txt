@@ -1,8 +1,0 @@
-.idea/
-*.iml
-target/
-*.class
-
-
-
-MYSQL passwors:  Surya@123
